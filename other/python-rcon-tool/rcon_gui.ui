@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>650</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>RCON tool for Gaming</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>691</width>
+      <height>511</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="pageServers"/>
+    <widget class="QWidget" name="pagePlayers"/>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>688</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuServers">
+    <property name="title">
+     <string>Servers</string>
+    </property>
+    <addaction name="actionASECrystal"/>
+    <addaction name="actionASEExtinction"/>
+    <addaction name="actionASEValto"/>
+    <addaction name="separator"/>
+    <addaction name="actionASAIsland"/>
+    <addaction name="actionASACenter"/>
+    <addaction name="actionASAScorched"/>
+    <addaction name="actionASAAberration"/>
+   </widget>
+   <widget class="QMenu" name="menuPlayers">
+    <property name="title">
+     <string>Players</string>
+    </property>
+    <addaction name="actionOnlinePlayers_2"/>
+    <addaction name="actionBannedPlayers_2"/>
+   </widget>
+   <widget class="QMenu" name="menuSettings">
+    <property name="title">
+     <string>Settings</string>
+    </property>
+    <addaction name="actionTheme_2"/>
+    <addaction name="actionWindows_size"/>
+   </widget>
+   <addaction name="menuServers"/>
+   <addaction name="menuPlayers"/>
+   <addaction name="menuSettings"/>
+  </widget>
+  <action name="actionSECrystal">
+   <property name="text">
+    <string>SE - Crystal Isles</string>
+   </property>
+  </action>
+  <action name="actionSEExtinction">
+   <property name="text">
+    <string>SE - Extinction</string>
+   </property>
+  </action>
+  <action name="actionSEValto">
+   <property name="text">
+    <string>SE - Váltó</string>
+   </property>
+  </action>
+  <action name="actionSAIsland">
+   <property name="text">
+    <string>SA - The Island</string>
+   </property>
+  </action>
+  <action name="actionSACenter">
+   <property name="text">
+    <string>SA - Center</string>
+   </property>
+  </action>
+  <action name="actionSAScorched">
+   <property name="text">
+    <string>SA - Scorched Earth</string>
+   </property>
+  </action>
+  <action name="actionSAAberration">
+   <property name="text">
+    <string>SA - Aberration</string>
+   </property>
+  </action>
+  <action name="actionOnlinePlayers">
+   <property name="text">
+    <string>Online players</string>
+   </property>
+  </action>
+  <action name="actionBannedPlayers">
+   <property name="text">
+    <string>Banned players</string>
+   </property>
+  </action>
+  <action name="actionTheme">
+   <property name="text">
+    <string>Theme</string>
+   </property>
+  </action>
+  <action name="actionWindowSize">
+   <property name="text">
+    <string>Window size</string>
+   </property>
+  </action>
+  <action name="actionASECrystal">
+   <property name="text">
+    <string>ASE - Crystal Isles</string>
+   </property>
+  </action>
+  <action name="actionASEExtinction">
+   <property name="text">
+    <string>ASE - Extinction</string>
+   </property>
+  </action>
+  <action name="actionASEValto">
+   <property name="text">
+    <string>ASE - Váltó</string>
+   </property>
+  </action>
+  <action name="actionASAIsland">
+   <property name="text">
+    <string>ASA - The Island</string>
+   </property>
+  </action>
+  <action name="actionASACenter">
+   <property name="text">
+    <string>ASA - Center</string>
+   </property>
+  </action>
+  <action name="actionASAScorched">
+   <property name="text">
+    <string>ASA - Scorched Earth</string>
+   </property>
+  </action>
+  <action name="actionASAAberration">
+   <property name="text">
+    <string>ASA - Aberration</string>
+   </property>
+  </action>
+  <action name="actionOnlinePlayers_2">
+   <property name="text">
+    <string>Online Players</string>
+   </property>
+  </action>
+  <action name="actionBannedPlayers_2">
+   <property name="text">
+    <string>Banned Players</string>
+   </property>
+  </action>
+  <action name="actionTheme_2">
+   <property name="text">
+    <string>Theme</string>
+   </property>
+  </action>
+  <action name="actionWindows_size">
+   <property name="text">
+    <string>Windows size</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
