@@ -104,3 +104,93 @@ reversed_tuples = sorted_tuples[::-1]
 
 print(reversed_strings)  # Output: ['orange', 'banana', 'apple']
 print(reversed_tuples)  # Output: (5, 4, 3, 2, 1)
+
+# Searching
+index_of_apple = strings.index("apple")
+index_of_1 = numbers.index(1)
+
+print(index_of_apple)  # Output: 0
+print(index_of_1)  # Output: 0
+
+# Counting
+count_of_apple = strings.count("apple")
+count_of_1 = numbers.count(1)
+
+print(count_of_apple)  # Output: 1
+print(count_of_1)  # Output: 1
+
+# Min and max
+min_value_in_numbers = min(numbers)
+max_value_in_numbers = max(numbers)
+
+print(min_value_in_numbers)  # Output: 3
+print(max_value_in_numbers)  # Output: 100
+
+# List comprehension
+squared_numbers = [num ** 2 for num in numbers]
+
+print(squared_numbers)  # Output: [9, 9, 16, 25, 10000]
+
+# Dictionary comprehension
+squared_numbers_dict = {num: num ** 2 for num in numbers}
+
+print(squared_numbers_dict)  # Output: {10: 100, 20: 400, 30: 900, 40: 1600, 50: 2500}
+
+# Set comprehension
+squared_numbers_set = {num ** 2 for num in numbers}
+
+print(squared_numbers_set)  # Output: {100, 9, 400, 900, 1600, 2500, 10000}
+
+# Generator expression
+squared_numbers_generator = (num ** 2 for num in numbers)
+
+for num in squared_numbers_generator:
+    print(num)  # Output: 9, 9, 16, 25, 10000
+
+# Lambda function
+square = lambda num: num ** 2
+
+print(square(10))  # Output: 100
+
+# Map function
+squared_numbers_map = list(map(square, numbers))
+
+print(squared_numbers_map)  # Output: [9, 9, 16, 25, 10000]
+
+# Filter function
+even_numbers_filter = list(filter(lambda num: num % 2 == 0, numbers))
+
+print(even_numbers_filter)  # Output: [10, 20, 40, 10000]
+
+# Zip function
+numbers_and_strings = list(zip(numbers, strings))
+
+print(numbers_and_strings)  # Output: [(10, 'apple'), (20, 'banana'), (30, 'orange')]
+
+# Enumerate function
+enumerated_numbers = list(enumerate(numbers))
+
+print(enumerated_numbers)  # Output: [(0, 10), (1, 20), (2, 30), (3, 40), (4, 10000)]
+
+# Unpacking
+num1, num2, *others = numbers
+
+print(num1)  # Output: 10
+print(num2)  # Output: 20
+print(others)  # Output: [30, 40, 10000]
+
+# Tuple unpacking
+numbers_tuple = (10, 20, 30, 40, 10000)
+num1, num2, *others = numbers_tuple
+
+print(num1)  # Output: 10
+print(num2)  # Output: 20
+print(others)  # Output: [30, 40, 10000]
+
+# Deleting variables
+del num1, num2, others
+
+try:
+    print(num1)  # Output: NameError: name 'num1' is not defined
+except NameError as e:
+    print(e)
