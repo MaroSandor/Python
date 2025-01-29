@@ -246,7 +246,7 @@ class ReportApp(QMainWindow):
 
         # Probléma és megjegyzés hozzáadása
         pdf.set_font("DejaVu", size=10)
-        pdf.multi_cell(0, 10, txt=f"Probléma: {issue}\n\nMegjegyzés:\n{comment}", align='L')
+        pdf.multi_cell(0, 10, txt=f"Probléma: {issue}\nMegjegyzés:\n{comment}", align='L')
 
         # Fotók elhelyezése egy oldalon
         if self.photos:
@@ -273,7 +273,6 @@ class ReportApp(QMainWindow):
             QMessageBox.information(self, "Siker", f"A hibajegy exportálva lett: {file_name}")
         except Exception as e:
             QMessageBox.critical(self, "Hiba", f"Nem sikerült a PDF exportálása: {str(e)}")
-
 
 if __name__ == "__main__":
     app = QApplication([])
