@@ -274,6 +274,7 @@ class ReportApp(QMainWindow):
         except Exception as e:
             QMessageBox.critical(self, "Hiba", f"Nem sikerült a PDF exportálása: {str(e)}")
 
+
 if __name__ == "__main__":
     app = QApplication([])
     window = ReportApp()
